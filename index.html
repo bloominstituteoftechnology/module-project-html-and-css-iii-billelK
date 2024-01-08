@@ -78,21 +78,76 @@
     [id^=flexContainer4] {
       display: flex;
       justify-content: space-evenly;
-      flex-direction: row-reverse;
+      /* flex-direction: row; */
       align-items: flex-end;
     }  
-    .flexItem{
+    [id^=flexContainer4] > div:nth-child(3) {
+      order: 1;
+    }
+    [id^=flexContainer4] > div:nth-child(2) {
+      order: 3;
+    }
+    [id^=flexContainer4] > div:nth-child(1) {
       order: 2;
     }
     /* 👉 Task 5 - [HINT] research align-self */
-
+    [id^=flexContainer5] {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+    [id^=flexContainer5] > div:nth-child(2) {
+      align-self: center;
+    }
     /* 👉 Task 6 - [HINT] flex items can be flex containers */
-
+    [id^=flexContainer6] {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+    [id^=flexContainer6] > div:nth-child(3) {
+      align-self: flex-start;
+    } 
+    [id^=flexContainer6] > div:nth-child(1) {
+      display: flex;
+      /* align-self: flex-start; */
+      justify-content: flex-end;
+    } 
+    [id^=flexContainer6] > div:nth-child(2) {
+      display: flex;
+      /* align-self: flex-start; */
+      align-items: flex-end;
+    }  
     /* 👉 Task 7 - [HINT] research flex-grow */
-
+    [id^=flexContainer7] {
+      display: flex;
+    }
+    [id^=flexContainer7] > div:nth-child(2) {
+      flex-grow: 3;
+    } 
+    [id^=flexContainer7] > div:nth-child(3) {
+      flex-grow: 4;
+    } 
     /* 👉 Task 8 - [HINT] you got this! */
-
-
+    [id^=flexContainer8] {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+    [id^=flexContainer8] > div:nth-child(1) {
+      display:flex;
+      justify-content: flex-end;
+    }
+    [id^=flexContainer8] > div:nth-child(2) {
+      align-self: center;
+    }
+    [id^=flexContainer8] > div:nth-child(3) {
+      display: flex;
+      justify-content: flex-start;
+      align-self: flex-end;
+    }
     /*
     👉 Part 2 of 2 👈
     Revisit the Module Project of HTML & CSS II and re-style it using Flexbox.
